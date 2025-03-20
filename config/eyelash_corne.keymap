@@ -44,6 +44,32 @@
             require-prior-idle-ms = <125>;
             flavor = "tap-preferred";
         };
+
+        leftlt: leftlt {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LEFTLT";
+            bindings = <&mo>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <200>;
+            require-prior-idle-ms = <125>;
+            flavor = "tap-preferred";
+            hold-trigger-key-positions = <0 1 2 3 4 5 13 14 15 16 17 18 28 29 30 31 32 33 34 42 43 44>;
+        };
+
+        rightlt: rightlt {
+            compatible = "zmk,behavior-hold-tap";
+            label = "RIGHTLT";
+            bindings = <&mo>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <200>;
+            require-prior-idle-ms = <125>;
+            flavor = "tap-preferred";
+            hold-trigger-key-positions = <6 7 8 9 10 11 12 19 20 21 22 23 24 25 26 27 35 36 37 38 39 40 41 45 46 47>;
+        };
     };
 
     rgb_encoder: rgb_encoder {
@@ -66,10 +92,10 @@
         default_layer {
             display-name = "QWERTY";
             bindings = <
-&kp ESCAPE  &kp Q            &kp W            &kp E         &kp R        &kp T                                      &kp UP               &kp Y        &kp U        &kp I                 &kp O             &kp P                     &kp BSPC
-&kp CAPS    &rpi LEFT_GUI A  &rpi LEFT_ALT S  &rpi LCTRL D  &kp F        &kp G                            &kp LEFT  &trans    &kp RIGHT  &kp H        &kp J        &rpi RIGHT_CONTROL K  &rpi RIGHT_ALT L  &rpi RIGHT_GUI SEMICOLON  &kp SQT
-&td0        &kp Z            &kp X            &kp C         &kp V        &kp B      &lt 1 C_PLAY_PAUSE              &kp DOWN             &kp N        &kp M        &kp COMMA             &kp DOT           &kp FSLH                  &kp RSHIFT
-                                              &lt 3 SPACE   &lt 5 SPACE  &lt 4 TAB                                                       &lt 7 ENTER  &lt 2 SPACE  &lt 6 DEL
+&kp ESCAPE  &kp Q            &kp W            &kp E            &kp R            &kp T                                          &kp UP               &kp Y             &kp U             &kp I                 &kp O             &kp P                     &kp BSPC
+&kp CAPS    &rpi LEFT_GUI A  &rpi LEFT_ALT S  &rpi LCTRL D     &kp F            &kp G                                &kp LEFT  &trans    &kp RIGHT  &kp H             &kp J             &rpi RIGHT_CONTROL K  &rpi RIGHT_ALT L  &rpi RIGHT_GUI SEMICOLON  &kp SQT
+&td0        &kp Z            &kp X            &kp C            &kp V            &kp B          &lt 1 C_PLAY_PAUSE              &kp DOWN             &kp N             &kp M             &kp COMMA             &kp DOT           &kp FSLH                  &kp RSHIFT
+                                              &leftlt 3 SPACE  &leftlt 5 SPACE  &leftlt 4 TAB                                                       &rightlt 7 ENTER  &rightlt 2 SPACE  &rightlt 6 DEL
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
