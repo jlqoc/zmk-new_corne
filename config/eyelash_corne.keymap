@@ -86,6 +86,22 @@
         tap-ms = <100>;
     };
 
+    macros {
+        appt: snipping {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp H &kp T &kp T &kp P &kp S &kp COLON &kp FSLH &kp FSLH &kp C &kp A &kp L &kp E &kp N &kp D &kp A &kp R &kp DOT &kp A &kp P &kp P &kp DOT &kp G &kp O &kp O &kp G &kp L &kp E &kp FSLH &kp LS(D) &kp LS(D) &kp J &kp N5 &kp V &kp LS(P) &kp C &kp C &kp N8 &kp N5 &kp B &kp N3 &kp D &kp N1 &kp G &kp P &kp N8 &kp RET>;
+            label = "SNIPPING";
+        };
+
+        subcribe: subcribe {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp LS(M) &kp N2 &kp N0 &kp N0 &kp N8 &kp N1 &kp N8 &kp N1 &kp N9 &kp N0 &kp N5 &kp N3 &kp N4 &kp N5 &kp N0>;
+            label = "SUBCRIBE";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -170,10 +186,10 @@
 
         RGB {
             bindings = <
-&rgb_ug RGB_SPI                    &rgb_ug RGB_BRI                   &rgb_ug RGB_SAI  &rgb_ug RGB_HUI  &rgb_ug RGB_ON   &trans                    &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&rgb_ug RGB_COLOR_HSB(290,100,50)  &rgb_ug RGB_COLOR_HSB(157,94,58)  &rgb_ug RGB_EFR  &rgb_ug RGB_EFF  &rgb_ug RGB_TOG  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&rgb_ug RGB_SPD                    &rgb_ug RGB_BRD                   &rgb_ug RGB_SAD  &rgb_ug RGB_HUD  &rgb_ug RGB_OFF  &trans  &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
-                                                                                      &trans           &trans           &trans                                    &trans  &trans  &trans
+&rgb_ug RGB_SPI                    &rgb_ug RGB_BRI                   &rgb_ug RGB_SAI  &rgb_ug RGB_HUI  &rgb_ug RGB_ON   &trans                    &trans          &trans  &trans         &trans  &trans  &trans  &trans
+&rgb_ug RGB_COLOR_HSB(290,100,50)  &rgb_ug RGB_COLOR_HSB(157,94,58)  &rgb_ug RGB_EFR  &rgb_ug RGB_EFF  &rgb_ug RGB_TOG  &trans            &trans  &trans  &trans  &trans  &kp LS(LG(S))  &trans  &trans  &trans  &trans
+&rgb_ug RGB_SPD                    &rgb_ug RGB_BRD                   &rgb_ug RGB_SAD  &rgb_ug RGB_HUD  &rgb_ug RGB_OFF  &trans  &trans            &trans          &trans  &trans         &trans  &trans  &trans  &trans
+                                                                                      &trans           &trans           &trans                                    &trans  &trans         &trans
             >;
         };
     };
