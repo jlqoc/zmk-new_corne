@@ -21,7 +21,7 @@ layers:
   - F
   - G
   - $$mdi:arrow-left-bold$$
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&yarp'
   - $$mdi:arrow-right-bold$$
   - H
   - J
@@ -43,7 +43,7 @@ layers:
   - {t: ., s: '>'}
   - {t: /, s: '?'}
   - $$mdi:apple-keyboard-shift$$
-  - {t: '$$mdi:keyboard-space$$', h: Nav}
+  - {t: '$$mdi:apple-keyboard-option$$', h: Nav}
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-tab$$', h: Num}
   - {t: '$$mdi:keyboard-return$$', h: Sym}
