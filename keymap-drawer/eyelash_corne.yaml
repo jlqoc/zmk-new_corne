@@ -14,10 +14,10 @@ layers:
   - O
   - P
   - {t: '$$mdi:backspace$$', type: backspace}
-  - $$mdi:apple-keyboard-caps$$
-  - {t: A, h: '$$mdi:apple-keyboard-command$$'}
-  - {t: S, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: D, h: '$$mdi:apple-keyboard-control$$'}
+  - $$mdi:apple-keyboard-control$$
+  - A
+  - S
+  - D
   - F
   - G
   - $$mdi:arrow-left-bold$$
@@ -25,9 +25,9 @@ layers:
   - $$mdi:arrow-right-bold$$
   - H
   - J
-  - {t: K, h: '$$mdi:apple-keyboard-control$$'}
-  - {t: L, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: ;, h: RIGHT GUI, s: ':'}
+  - K
+  - L
+  - {t: ;, s: ':'}
   - {t: '''', s: '"'}
   - '&td0'
   - Z
