@@ -44,10 +44,10 @@ layers:
   - {t: /, s: '?'}
   - $$mdi:apple-keyboard-shift$$
   - {t: '$$mdi:keyboard-space$$', h: Nav}
-  - {t: '$$mdi:keyboard-space$$', h: QWERTY}
+  - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-tab$$', h: Num}
   - {t: '$$mdi:keyboard-return$$', h: Sym}
-  - {t: '$$mdi:keyboard-space$$', h: QWERTY}
+  - $$mdi:keyboard-space$$
   - {t: '$$mdi:backspace-reverse-outline$$', h: Fun}
   Nav:
   - {t: '$$mdi:transfer$$', type: trans}
