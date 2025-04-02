@@ -180,9 +180,9 @@
 
         RGB {
             bindings = <
-&rgb_ug RGB_SPI                    &rgb_ug RGB_BRI                   &rgb_ug RGB_SAI  &rgb_ug RGB_HUI  &rgb_ug RGB_ON   &trans                        &kp C_VOLUME_UP                &trans  &trans         &trans  &trans  &trans  &trans
-&rgb_ug RGB_COLOR_HSB(290,100,50)  &rgb_ug RGB_COLOR_HSB(157,94,58)  &rgb_ug RGB_EFR  &rgb_ug RGB_EFF  &rgb_ug RGB_TOG  &trans            &kp C_PREV  &kp K_PLAY_PAUSE   &kp C_NEXT  &trans  &kp LS(LG(S))  &trans  &trans  &trans  &trans
-&rgb_ug RGB_SPD                    &rgb_ug RGB_BRD                   &rgb_ug RGB_SAD  &rgb_ug RGB_HUD  &rgb_ug RGB_OFF  &trans  &trans                &kp C_VOLUME_DOWN              &trans  &trans         &trans  &trans  &trans  &trans
+&rgb_ug RGB_SPI                    &rgb_ug RGB_BRI                   &rgb_ug RGB_SAI  &rgb_ug RGB_HUI  &rgb_ug RGB_ON   &trans                        &kp C_VOLUME_UP                &trans  &trans         &trans         &trans  &trans  &trans
+&rgb_ug RGB_COLOR_HSB(290,100,50)  &rgb_ug RGB_COLOR_HSB(157,94,58)  &rgb_ug RGB_EFR  &rgb_ug RGB_EFF  &rgb_ug RGB_TOG  &trans            &kp C_PREV  &kp K_PLAY_PAUSE   &kp C_NEXT  &trans  &kp LS(LG(S))  &kp LC(GRAVE)  &trans  &trans  &trans
+&rgb_ug RGB_SPD                    &rgb_ug RGB_BRD                   &rgb_ug RGB_SAD  &rgb_ug RGB_HUD  &rgb_ug RGB_OFF  &trans  &trans                &kp C_VOLUME_DOWN              &trans  &trans         &trans         &trans  &trans  &trans
                                                                                       &trans           &trans           &trans                                                       &trans  &trans         &trans
             >;
         };
