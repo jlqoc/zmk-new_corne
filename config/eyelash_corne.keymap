@@ -147,10 +147,10 @@
 
         Symbols {
             bindings = <
-&trans  &kp LEFT_BRACKET  &kp LS(AMPS)  &kp LS(STAR)          &kp LS(LPAR)           &kp LS(RIGHT_BRACKET)                       &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp PLUS          &kp LS(DLLR)  &kp LS(PRCNT)         &kp LS(CARET)          &kp EQUAL                           &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp LS(LBRC)      &kp LS(EXCL)  &kp LS(AT)            &kp LS(POUND)          &kp LS(RBRC)           &kp GRAVE            &trans          &trans  &trans  &trans  &trans  &trans  &trans
-                                        &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LS(UNDER)                                               &trans  &trans  &trans
+&kp GRAVE          &kp LEFT_BRACKET    &kp LS(AMPS)  &kp LS(STAR)          &kp LS(LPAR)           &kp RIGHT_BRACKET                      &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&kp DOUBLE_QUOTES  &kp PLUS            &kp LS(DLLR)  &kp LS(PRCNT)         &kp LS(CARET)          &kp EQUAL                      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&kp SINGLE_QUOTE   &kp LS(LEFT_BRACE)  &kp LS(EXCL)  &kp LS(AT)            &kp LS(POUND)          &kp LS(RIGHT_BRACE)  &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
+                                                     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LS(UNDER)                                          &trans  &trans  &trans
             >;
 
             label = "Sym";
@@ -180,10 +180,10 @@
 
         RGB {
             bindings = <
-&rgb_ug RGB_SPI                    &rgb_ug RGB_BRI                   &rgb_ug RGB_SAI  &rgb_ug RGB_HUI  &rgb_ug RGB_ON   &trans                        &kp C_VOLUME_UP                &trans  &trans         &trans         &trans  &trans  &trans
-&rgb_ug RGB_COLOR_HSB(290,100,50)  &rgb_ug RGB_COLOR_HSB(157,94,58)  &rgb_ug RGB_EFR  &rgb_ug RGB_EFF  &rgb_ug RGB_TOG  &trans            &kp C_PREV  &kp K_PLAY_PAUSE   &kp C_NEXT  &trans  &kp LS(LG(S))  &kp LC(GRAVE)  &trans  &trans  &trans
-&rgb_ug RGB_SPD                    &rgb_ug RGB_BRD                   &rgb_ug RGB_SAD  &rgb_ug RGB_HUD  &rgb_ug RGB_OFF  &trans  &trans                &kp C_VOLUME_DOWN              &trans  &trans         &trans         &trans  &trans  &trans
-                                                                                      &trans           &trans           &trans                                                       &trans  &trans         &trans
+&rgb_ug RGB_SPI                    &rgb_ug RGB_BRI                   &rgb_ug RGB_SAI  &rgb_ug RGB_HUI  &rgb_ug RGB_ON   &trans                        &kp C_VOLUME_UP                &kp LG(LS(GRAVE))  &kp LC(LA(LG(N1)))  &kp LA(LC(LG(N2)))  &kp LC(LA(LG(N3)))  &trans  &trans
+&rgb_ug RGB_COLOR_HSB(290,100,50)  &rgb_ug RGB_COLOR_HSB(157,94,58)  &rgb_ug RGB_EFR  &rgb_ug RGB_EFF  &rgb_ug RGB_TOG  &trans            &kp C_PREV  &kp K_PLAY_PAUSE   &kp C_NEXT  &kp LS(LC(LG(M)))  &kp LS(LG(S))       &kp LC(GRAVE)       &trans              &trans  &trans
+&rgb_ug RGB_SPD                    &rgb_ug RGB_BRD                   &rgb_ug RGB_SAD  &rgb_ug RGB_HUD  &rgb_ug RGB_OFF  &trans  &trans                &kp C_VOLUME_DOWN              &trans             &trans              &trans              &trans              &trans  &trans
+                                                                                      &trans           &trans           &trans                                                       &trans             &trans              &trans
             >;
         };
     };
