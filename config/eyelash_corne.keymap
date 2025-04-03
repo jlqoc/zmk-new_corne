@@ -79,6 +79,7 @@
 
             label = "ESCGRAVE";
         };
+    };
 
         rgb_encoder: rgb_encoder {
             compatible = "zmk,behavior-sensor-rotate";
@@ -93,7 +94,6 @@
 
             tap-ms = <100>;
         };
-    };
 
     macros {
         appt: snipping {
